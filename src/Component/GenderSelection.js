@@ -1,7 +1,7 @@
 import React,{useState} from "react";
 import "../App.css";
 import { useForm } from "react-hook-form"
-const FormTypeTwo = () => {
+const GenderSelection = () => {
     const { register, handleSubmit } = useForm();
     const [data,setData]= useState("")
     const onSubmit = (d) => {
@@ -12,8 +12,8 @@ const FormTypeTwo = () => {
             <input {...register("firstName")} placeholder="First Name" />
             <select {...register("category")} placeholder="Category">
                 <option>Select...</option>
-                <option>Option A</option>
-                <option>Option B</option>
+                <option>Male</option>
+                <option>Female</option>
             </select>
             <textarea {...register("About you")} placeholder="About You"></textarea>
             {data}
@@ -22,4 +22,4 @@ const FormTypeTwo = () => {
     )
 }
 
-export default FormTypeTwo;
+export default GenderSelection;

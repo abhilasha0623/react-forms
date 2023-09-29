@@ -1,12 +1,15 @@
 // import SimpleForm from './Component/SimpleForm';
 import './App.css';
-import FormTypeTwo from './Component/FormTypeTwo';
+// import GenderSelection from './Component/GenderSelection';
+import ValidationForm from './Component/ValidationForm';
+
 
 function App() {
   return (
     <div className="App">
       {/* <SimpleForm/> */}
-      <FormTypeTwo/>
+      {/* <GenderSelection/> */}
+      <ValidationForm/>
     </div>
   );
 }
